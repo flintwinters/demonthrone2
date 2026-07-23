@@ -65,7 +65,7 @@ canvas {
   letter-spacing: 0.04em;
   text-decoration: none;
   text-transform: uppercase;
-  animation: discord-shine 2.8s steps(32, end) infinite;
+  animation: discord-shine 20s steps(32, end) infinite;
 }
 
 .discord-link:focus-visible {
