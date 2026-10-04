@@ -11,6 +11,9 @@ crisp isometric Three.js voxel world. Command four teammates with sharply
 different sight, movement, range, and health profiles across an unbounded,
 height-aware procedural battlefield.
 
+[Explore the project](https://flintwinters.github.io/demonthrone2/) or
+[play the browser prototype](https://flintwinters.github.io/demonthrone2/play/).
+
 ## Current features
 
 - Six deterministic biomes with layered elevation, boulders, foliage, basin
@@ -79,6 +82,19 @@ The standard-library backend serves only the browser runtime assets and exposes:
 
 - `GET /api/health`
 - `GET /api/game/new`
+
+## GitHub Pages
+
+The public landing page lives in `pages/`. The `main` branch deploys automatically
+through `.github/workflows/pages.yml` after frontend and Python checks pass.
+`python manage.py pages` builds the static deployment into `.pages-output/`,
+including the existing game at `/play/` and its Three.js dependencies. The demo
+runs entirely in the browser; backend API endpoints are not deployed.
+
+For local visual review, run `python manage.py preview-pages` after building.
+This requires Chromium and writes desktop, mobile, and actual gameplay captures
+to `.pages-preview/`. The landing page uses a real gameplay capture in
+`pages/assets/gameplay.png`; refresh it when the game's appearance changes.
 
 ## Planned work
 

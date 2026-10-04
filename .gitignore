@@ -17,3 +17,5 @@ coverage/
 htmlcov/
 *.log
 .DS_Store
+.pages-output/
+.pages-preview/

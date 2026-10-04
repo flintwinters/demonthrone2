@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demonthrone — Isometric Squad Tactics Roguelike</title>
+  <meta name="description" content="Command four teammates with one shared action per turn. Explore Demonthrone, a browser-based squad tactics roguelike with procedural voxel terrain. Play the prototype.">
+  <meta name="theme-color" content="#1d2021">
+  <link rel="canonical" href="@@SITE_URL@@">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Demonthrone">
+  <meta property="og:title" content="Demonthrone — Four teammates. One action. Make it count.">
+  <meta property="og:description" content="A browser-based squad tactics roguelike on an unbounded voxel battlefield. Play the early prototype and help shape what comes next.">
+  <meta property="og:url" content="@@SITE_URL@@">
+  <meta property="og:image" content="@@SITE_URL@@assets/gameplay.png">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="960">
+  <meta property="og:image:alt" content="Demonthrone prototype: an isometric voxel battlefield with four teammates, enemies, terrain, and fog of war.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Demonthrone — Isometric Squad Tactics Roguelike">
+  <meta name="twitter:description" content="Four teammates. One action. Make it count. Play an early browser tactics prototype on procedural voxel terrain.">
+  <meta name="twitter:image" content="@@SITE_URL@@assets/gameplay.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Demonthrone",
+      "url": "@@SITE_URL@@",
+      "description": "A browser-based isometric squad tactics roguelike prototype with four teammates, one shared action per turn, and procedural voxel terrain.",
+      "image": "@@SITE_URL@@assets/gameplay.png",
+      "genre": ["Turn-based tactics", "Roguelike"],
+      "gamePlatform": "Web browser",
+      "playMode": "SinglePlayer",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "sameAs": "https://github.com/flintwinters/demonthrone2"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap masthead">
+    <a class="brand" href="./" aria-label="Demonthrone home"><img src="favicon.png" width="32" height="32" alt="">DEMONTHRONE<span class="brand-dot">◆</span></a>
+    <nav aria-label="Main navigation"><a href="#the-game">The game</a><a href="#how-to-play">How to play</a><a href="https://github.com/flintwinters/demonthrone2">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-dot"></span> Playable prototype · In development</div>
+      <p class="genre">BROWSER-BASED SQUAD TACTICS ROGUELIKE</p>
+      <h1 id="hero-title">Four teammates.<br>One action.<br><span>Make it count.</span></h1>
+      <div class="hero-bottom">
+        <p>Demonthrone puts your squad on an unbounded, isometric voxel battlefield. Find a sightline. Choose your ground. Spend the team’s one action where it matters most.</p>
+        <div class="actions"><a class="button" href="play/">Play the prototype <span aria-hidden="true">↗</span></a><a class="text-link" href="https://discord.gg/4bgkdKgu2A">Join the Discord ↗</a></div>
+      </div>
+      <figure class="game-shot">
+        <img src="assets/gameplay.png" width="1440" height="960" fetchpriority="high" alt="Actual Demonthrone gameplay: brightly colored voxel terrain, the four-piece squad, enemies, and a dark fog-of-war boundary.">
+        <figcaption><span>THE BATTLEFIELD, AS IT PLAYS TODAY</span><span>Actual prototype capture · WebGL</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap section" id="the-game" aria-labelledby="game-title">
+      <div class="section-heading"><p class="eyebrow">01 / THE GAME</p><h2 id="game-title">The ground is part<br>of the fight.</h2></div>
+      <div class="feature-grid">
+        <article><span class="feature-number">01</span><h3>One choice for the whole squad</h3><p>Your vanguard, warden, varmint, and marauder have different strengths. Moving, pushing, attacking, or enchanting spends the team’s shared action. Choose who acts; live with what follows.</p></article>
+        <article><span class="feature-number">02</span><h3>What you see matters</h3><p>Fog of war conceals the battlefield. Elevation, boulders, walls, and living characters block sightlines. A target being close is no guarantee you can hit it.</p></article>
+        <article><span class="feature-number">03</span><h3>A world beyond the screen</h3><p>Explore six procedural biomes: cinder, fen, heath, ridge, bog, and mesa. Rivers slow your advance, ice changes movement costs, and climbable brick walls follow the landscape.</p></article>
+        <article><span class="feature-number">04</span><h3>More than move and attack</h3><p>Push crates into position or enchant them into follower chains. Inspect enemy reach before committing. Pursuers and towering nephilim bring different threats to your next turn.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap section play-guide" id="how-to-play" aria-labelledby="play-title">
+      <div class="section-heading"><p class="eyebrow">02 / YOUR FIRST TURN</p><h2 id="play-title">Read the field.<br>Commit your move.</h2><p>No installation or account required. Open the prototype in a browser with WebGL support. A desktop mouse and keyboard are the easiest way to start.</p><a class="button" href="play/">Enter the battlefield <span aria-hidden="true">↗</span></a></div>
+      <ol class="steps">
+        <li><h3>Select a teammate</h3><p>Click a squad member to see where they can move and which targets they can attack.</p></li>
+        <li><h3>Plan one action</h3><p>Click a highlighted destination or target. Preview the choice before you commit. Press <kbd>Esc</kbd> to cancel and rethink.</p></li>
+        <li><h3>Resolve the turn</h3><p>Press <kbd>Enter</kbd> or click <strong>go</strong>. Your plan resolves, then enemies attack and pursue. Read the new position and choose again.</p></li>
+      </ol>
+      <div class="camera-note"><strong>Look around</strong><p>Drag to pan. Scroll or pinch to zoom. Right-drag to rotate and tilt, or use the on-screen rotation buttons. Click an enemy to inspect its movement and attack range.</p></div>
+    </section>
+
+    <section class="wrap section development" aria-labelledby="dev-title">
+      <p class="eyebrow">03 / BUILT IN THE OPEN</p>
+      <div class="dev-grid"><div><h2 id="dev-title">Early days.<br>Real decisions.</h2><p>This is a playable proof of concept, not a finished game. The terrain, visibility, combat, and crate systems are here to try now. Save and load, inventory, and richer character inspection are planned; they are not in the prototype yet.</p><p>Try a few turns. Tell us what surprised you, where you got stuck, and what you want to see next.</p><div class="actions"><a class="button secondary" href="https://discord.gg/4bgkdKgu2A">Talk tactics on Discord ↗</a><a class="text-link" href="https://github.com/flintwinters/demonthrone2">Explore the source ↗</a></div></div><aside class="build-note" aria-label="Project at a glance"><p class="eyebrow">PROJECT AT A GLANCE</p><dl><dt>Format</dt><dd>Single-player browser game</dd><dt>Style</dt><dd>Isometric voxel tactics</dd><dt>World</dt><dd>Procedural, coordinate-unbounded</dd><dt>Built with</dt><dd>TypeScript + Three.js / WebGL</dd><dt>Right now</dt><dd>Playable proof of concept</dd></dl></aside></div>
+    </section>
+  </main>
+  <footer class="wrap"><a class="brand" href="./">DEMONTHRONE<span class="brand-dot">◆</span></a><p>Pick your ground. Make your move.</p><a href="https://github.com/flintwinters/demonthrone2/issues">Report an issue ↗</a></footer>
+</body>
+</html>

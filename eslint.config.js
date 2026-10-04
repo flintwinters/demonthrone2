@@ -18,6 +18,7 @@ function moduleBoundary(name) {
 }
 
 export default [
+  { ignores: [".pages-output/**", ".pages-preview/**"] },
   {
     files: ["**/*.js"],
     ignores: ["node_modules/**"],

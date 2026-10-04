@@ -10,6 +10,7 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from backend.app import DEFAULT_HOST, DEFAULT_PORT, run_server
+from tools.pages import build_pages, preview_pages
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 
@@ -31,6 +32,8 @@ def create_parser() -> argparse.ArgumentParser:
     commands = parser.add_subparsers(dest="command", required=True)
 
     commands.add_parser("build", help="compile the TypeScript frontend")
+    commands.add_parser("pages", help="build the landing page and playable demo for GitHub Pages")
+    commands.add_parser("preview-pages", help="capture desktop, mobile, and game previews (requires Chromium)")
 
     server_parser = commands.add_parser(
         "runserver",
@@ -55,6 +58,13 @@ def main(argv: Sequence[str] | None = None) -> None:
     args = create_parser().parse_args(arguments)
     if args.command == "build":
         build_frontend()
+        return
+    if args.command == "pages":
+        build_frontend()
+        build_pages(PROJECT_ROOT)
+        return
+    if args.command == "preview-pages":
+        preview_pages(PROJECT_ROOT)
         return
 
     if not args.no_build:
